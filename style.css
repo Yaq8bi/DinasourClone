@@ -1,0 +1,78 @@
+*{
+   margin: 0; 
+   padding:0;
+}
+
+body{
+    background: linear-gradient(90deg,black,grey,white,grey,black);
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+#game{
+    margin:100px auto;
+    width: 500px;
+    height: 200px;
+    border: 5px solid black;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    background: grey;
+    box-shadow: 15px 20px black;
+}
+
+#character{
+    height:50px;
+    width: 50px;
+    background-color: blue;
+    position:relative;
+    top:75px;
+    left:10px;
+    border-radius: 50%;
+    box-shadow:inset 40px 0px silver, inset -2px 0px white;
+}
+.animate{
+    animation:jump 600ms ;
+}
+
+@keyframes jump{
+    0%{top:75px;}
+    30%{top:20px;}
+    70%{top: 20px;}
+    100%{top:75px;}
+}
+
+
+
+.button{
+    width: 8rem;
+    height:4rem;
+    color: black;
+    text-shadow:0.05em 0.05em white, 0.15em 0.15em grey;
+    font-size: large;
+    border-radius: 2em;
+    justify-content:center;
+    align-items:center;
+    display: flex;
+    background: linear-gradient(35deg,yellow,pink,purple,darkblue);
+    box-shadow: 2px 2px 5px lightyellow;
+    margin: 100px auto;
+}
+
+#block{
+    height: 20px;
+    width: 40px;
+    background: linear-gradient(90deg,rgb(252, 247, 0),rgba(255, 217, 0, 0.829),orange,brown,rgb(212, 19, 19));
+    position:relative;
+    top: 90px;
+    left: 100px;
+    border-radius:1em 0 0 1em;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block{
+    0%{left:210px;}
+    100%{left: -200px;}
+}
